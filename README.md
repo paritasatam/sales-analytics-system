@@ -22,3 +22,44 @@ Report Generation: Creates comprehensive JSON and text reports
 Error Handling: Robust error handling and logging
 
 
+
+
+
+# Setup and Execution
+
+Python version: 3.7 or higher
+
+Required libraries are listed in requirements.txt
+
+# To execute the complete workflow:
+
+python main.py
+
+This command performs data cleaning, analytics, API enrichment, and report generation in a single run.
+
+# Output Artifacts
+
+sales_data_cleaned.txt: Validated and cleaned sales records
+
+invalid_records.txt: Records excluded during validation
+
+enriched_sales_data.txt: Cleaned data enhanced with API attributes
+
+sales_report.txt: Comprehensive analytical report
+
+
+
+# Repository Structure
+sales-analytics-system/
+  ├── README.md
+  ├── main.py
+  ├── utils/
+  │   ├── file_handler.py
+  │   ├── data_processor.py
+  │   └── api_handler.py
+  ├── data/
+  │   └── sales_data.txt (provided)
+  ├── output/
+  └── requirements.txt
+
+
